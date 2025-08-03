@@ -28,9 +28,10 @@ def print_text(*text): # el asterisc allows for a variable number of arguments
 print_text("Hello", "World", "from", "Python")  # variable number of
 
 def print_upper_texts(*texts):
+    print(type(texts))  # prints the type of texts, which is a tuple
     for text in texts:
         print(text.upper())
-print_upper_texts("Hello", "World", "from", "Python")  # prints each text in uppercase
+print_upper_texts("Hello", "World", "from", "Python")  # Le paso parametros separados por coma prints each text in uppercase
 
 
 
