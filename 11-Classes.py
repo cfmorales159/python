@@ -15,7 +15,8 @@ print(my_person.name)  # prints the memory address of the instance
 print(f"{my_person.name}, {my_person.surname}")  # prints the name and surname of the person
 class Person2:
     def __init__(self, name, surname,alias= "Sin alias"):
-        self.full_name = f"{name} {surname} ({alias})"  # Full name is a single attribute
+        self.full_name = f"{name} {surname} ({alias})"  # Full name is a single attribute 
+                                                         #este parentesis es para que aprezaca el alias entre parentesis
     def walk (self):
         print(f"{self.full_name} is walking")
 
@@ -28,3 +29,6 @@ print(my_other_person.full_name)  # Creating another instance of the Person2 cla
 my_other_person.walk()  # Calls the walk method of the second Person2 instance
 my_other_person.full_name = "Axl Rose el cantor de la orquesta Guns & Roses"  #   
 print(my_other_person.full_name)  # prints the updated full name of the person
+my_other_person.full_name = 666
+print(my_other_person.full_name)  # como el tipo es dinamico, se puede cambiar el valor a un numero
+
